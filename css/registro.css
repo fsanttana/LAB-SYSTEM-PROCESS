@@ -1,0 +1,35 @@
+body{
+    background-image: url(/img/bg-login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+h1{
+    font-size: 40px;
+}
+
+
+
+input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    margin-left: 25px;
+}
+
+h3{
+    font-size: 12px;
+    margin-left: 25px;
+}
+
+select{
+    display: flex;
+    align-items: center;
+    width: 2%;
+    max-width: 100px;
+    margin-left: 25px;
+}
