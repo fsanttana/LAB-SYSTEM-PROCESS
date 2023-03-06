@@ -61,23 +61,23 @@
         </div>
       </div>
       <div class="form-outer">
-        <form action="#">
+        <form action="../registro_lab.php" method="post">
           <div class="page slide-page">
             <div class="field">
               <div class="label">Sample ID</div>
-              <input type="text">
+              <input type="text" name="Sample_ID">
             </div>
             <div class="field">
               <div class="label">Structure</div>
-              <input type="text">
+              <input type="text" name="Structure">
             </div>
             <div class="field">
               <div class="label">Area</div>
-              <input type="text">
+              <input type="text" name="Area">
             </div>
             <div class="field">
               <div class="label">Source</div>
-              <input type="text">
+              <input type="text" name="Source">
             </div>
             <div class="field">
               <button class="firstNext next">Siguiente</button>
@@ -87,29 +87,29 @@
           <div class="page">
             <div class="field">
               <div class="label">Depth From</div>
-              <input type="text">
+              <input type="text" name="Depth_From">
             </div>
             <div class="field">
               <div class="label">Depth To</div>
-              <input type="text">
+              <input type="text" name="Depth_To">
             </div>
             <div class="field">
               <div class="label">Material Type</div>
-              <select>
-                <option>Soil</option>
-                <option>Rock</option>
-                <option>Aggregate</option>
+              <select name="Material_Type">
+                <option value="Soil">Soil</option>
+                <option value="Rock">Rock</option>
+                <option value="Aggregate">Aggregate</option>
               </select>
             </div>
             <div class="field">
               <div class="label">Sample Type</div>
-              <select>
-                <option>Grab</option>
-                <option>Bulk</option>
-                <option>Truck</option>
-                <option>Shelby</option>
-                <option>Lexan</option>
-                <option>Ring</option>
+              <select name="Sample_Type">
+                <option value="Grab">Grab</option>
+                <option value="Bulk">Bulk</option>
+                <option value="Truck">Truck</option>
+                <option value="Shelby">Shelby</option>
+                <option value="Lexan">Lexan</option>
+                <option value="Ring">Ring</option>
               </select>
             </div>
             <div class="field btns">
@@ -121,23 +121,23 @@
           <div class="page">
             <div class="field">
               <div class="label">North</div>
-              <input type="text">
+              <input type="text" name="North">
             </div>
             <div class="field">
               <div class="label">East</div>
-              <input type="text">
+              <input type="text" name="East">
             </div>
             <div class="field">
               <div class="label">Elev</div>
-              <input type="text">
+              <input type="text" name="Elev">
             </div>
             <div class="field">
               <div class="label">Sample Date</div>
-              <input type="date">
+              <input type="date" name="Sample_Date">
             </div>
             <div class="field">
               <div class="label">Sample By</div>
-              <input type="text">
+              <input type="text" name="Sample_By">
             </div>
             <div class="field btns">
               <button class="prev-2 prev">Atrás</button>
@@ -148,23 +148,23 @@
           <div class="page">
             <div class="field">
               <div class="label">MC Oven</div>
-              <input type="text">
+              <input type="text" name="MC_Oven">
             </div>
             <div class="field">
               <div class="label">MC Stove</div>
-              <input type="text">
+              <input type="text" name="MC_Stove">
             </div>
             <div class="field">
               <div class="label">MC Scale</div>
-              <input type="text">
+              <input type="text" name="MC_Scale">
             </div>
             <div class="field">
               <div class="label">Atterberg Limit</div>
-              <input type="text">
+              <input type="text" name="Atterberg_Limit">
             </div>
             <div class="field">
               <div class="label">Grain Size</div>
-              <input type="text">
+              <input type="text" name="Grain_Size">
             </div>
             <div class="field btns">
               <button class="prev-3 prev">Atrás</button>
@@ -175,19 +175,23 @@
           <div class="page">
             <div class="field">
               <div class="label">Standard Proctor</div>
-              <input type="text">
+              <input type="text" name="Standard_Proctor">
             </div>
             <div class="field">
               <div class="label">Specific Gravity</div>
-              <input type="text">
+              <input type="text" name="Specific_Gravity">
             </div>
             <div class="field">
               <div class="label">Acid Reactivity</div>
-              <input type="text">
+              <input type="text" name="Acid_Reactivity">
             </div>
             <div class="field">
               <div class="label">Sand Castle</div>
-              <input type="text">
+              <input type="text" name="Sand_Castle">
+            </div>
+            <div class="field">
+              <div class="label">Permeability</div>
+              <input type="text" name="Permeability">
             </div>
             <div class="field btns">
               <button class="prev-4 prev">Atrás</button>
@@ -198,23 +202,23 @@
           <div class="page">
             <div class="field">
               <div class="label">BTS</div>
-              <input type="text">
+              <input type="text" name="BTS">
             </div>
             <div class="field">
               <div class="label">Hydrometer</div>
-              <input type="text">
+              <input type="text" name="Hydrometer">
             </div>
             <div class="field">
               <div class="label">Double Hydrometer</div>
-              <input type="text">
+              <input type="text" name="Double_Hydrometer">
             </div>
             <div class="field">
               <div class="label">Pinhole</div>
-              <input type="text">
+              <input type="text" name="Pinhole">
             </div>
             <div class="field">
               <div class="label">Consolidation</div>
-              <input type="text">
+              <input type="text" name="Consolidation">
             </div>
             <div class="field btns">
               <button class="prev-5 prev">Atrás</button>
@@ -226,23 +230,23 @@
             <div class="title"></div>
             <div class="field">
               <div class="label">Los Angeles Abrasion</div>
-              <input type="text">
+              <input type="text" name="Los_Angeles_Abrasion">
             </div>
             <div class="field">
               <div class="label">Soundness</div>
-              <input type="text">
+              <input type="text" name="Soundness">
             </div>
             <div class="field">
               <div class="label">UCS</div>
-              <input type="text">
+              <input type="text" name="UCS">
             </div>
             <div class="field">
               <div class="label">PLT</div>
-              <input type="text">
+              <input type="text" name="PLT">
             </div>
             <div class="field">
               <div class="label">Comment</div>
-              <input type="text">
+              <input type="text" name="Comments">
             </div>
             <div class="field btns">
               <button class="prev-6 prev">Atrás</button>
