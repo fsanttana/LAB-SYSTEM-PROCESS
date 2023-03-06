@@ -8,7 +8,9 @@ const prevBtnThree = document.querySelector(".prev-3");
 const nextBtnThree = document.querySelector(".next-3");
 const prevBtnFour = document.querySelector(".prev-4");
 const nextBtnFour = document.querySelector(".next-4");
-const prevBtnexit = document.querySelector(".prev-5");
+const prevBtnFive = document.querySelector(".prev-5");
+const nextBtnFive = document.querySelector(".next-5");
+const prevBtnexit = document.querySelector(".prev-6");
 const submitBtn = document.querySelector(".submit");
 const progressText = document.querySelectorAll(".step p");
 const progressCheck = document.querySelectorAll(".step .check");
@@ -50,6 +52,14 @@ nextBtnThree.addEventListener("click", function(event){
 nextBtnFour.addEventListener("click", function(event){
   event.preventDefault();
   slidePage.style.marginLeft = "-125%";
+  bullet[current - 1].classList.add("active");
+  progressCheck[current - 1].classList.add("active");
+  progressText[current - 1].classList.add("active");
+  current += 1;
+});
+nextBtnFive.addEventListener("click", function(event){
+  event.preventDefault();
+  slidePage.style.marginLeft = "-150%";
   bullet[current - 1].classList.add("active");
   progressCheck[current - 1].classList.add("active");
   progressText[current - 1].classList.add("active");
@@ -98,9 +108,17 @@ prevBtnFour.addEventListener("click", function(event){
   progressText[current - 2].classList.remove("active");
   current -= 1;
 });
-prevBtnexit.addEventListener("click", function(event){
+prevBtnFive.addEventListener("click", function(event){
   event.preventDefault();
   slidePage.style.marginLeft = "-100%";
+  bullet[current - 2].classList.remove("active");
+  progressCheck[current - 2].classList.remove("active");
+  progressText[current - 2].classList.remove("active");
+  current -= 1;
+});
+prevBtnexit.addEventListener("click", function(event){
+  event.preventDefault();
+  slidePage.style.marginLeft = "-125%";
   bullet[current - 2].classList.remove("active");
   progressCheck[current - 2].classList.remove("active");
   progressText[current - 2].classList.remove("active");
