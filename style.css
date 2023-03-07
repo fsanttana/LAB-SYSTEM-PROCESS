@@ -1,0 +1,21 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    padding: auto;
+}
+
+body{
+    align-items: center;
+    margin: relative;
+    padding: relative;
+}
+
+.contenedor-bt {
+    align-items: center;
+    border-radius: 8px;
+    background-color: red;
+    backdrop-filter: 45;
+    color: white;
+    width: 250PX;
+    height: 75px;
+}
